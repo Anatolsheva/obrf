@@ -1,0 +1,47 @@
+Anatolii Shevchuk 261049 
+31.12.2021
+
+
+
+
+Testy programu:
+
+test ma na celu sprawdzic poprawnosc dzialania programu dla modyfikacji obrazkow.
+
+[TEST 1]
+Testujemy program przetwrarzania obrazow przez  czarno-bialy obrazek.
+po wywolaniu skryptu "make"- gcc -o obrazy2 pobr.o oplik.o strukobr.o odczyt.c -lm
+sprawdzamy poprawnosc dzialania przez plik z formatem ppm ,pgm - ./obrazy2 (parametry) 
+program dziala poprawnie, po wywolaniu komendy tworzy nowy plik z zmodyfikowanym obrazkiem w formacie ppm ,pgm.
+
+[TEST 2]
+Testujemy program przetwrarzania obrazow przez  kolorowy obrazek.
+po wywolaniu skryptu "make"- gcc -o obrazy2 pobr.o oplik.o strukobr.o odczyt.c -lm
+sprawdzamy poprawnosc dzialania przez plik z formatem ppm ,pgm - ./obrazy2 (parametry) 
+program dziala poprawnie, po wywolaniu komendy tworzy nowy plik z zmodyfikowanym obrazkiem w formacie ppm ,pgm.
+
+[TEST 3]
+Testujemy program na funkcje zapisu w ppm,pgm.
+Program dziala poprawnie, po wywolaniu ./obrazy2(parametry)
+plik  formacie ppm mozemy zapisac w formacie pgm
+plik pgm w format ppm
+
+[TEST 4]
+Testujemy program na niepoprawny format dla programu.
+Program dziala poprawnie,po wywolaniu ./obrazy2 (parametry)
+mamy blad ze to nie jest poprawny format .
+
+[TEST 5]
+Testujemy program na niepoprawnosc wpisania opcij dla obrazka w ./obrazy2 (parametry)
+po wywolaniu,zostanie wpisany blad "-1" "-4" oraz tworzy  pusty plik.
+
+[TEST 6]
+Testujemy program na opcje:
+przyklad wywolania programu:
+1. make
+2. ./obrazy2 -d -i obrazek.ppm -n -o obrazek2.pgm -m r
+Wszystkie opcje dzialaja poprawnie
+
+KOMENTARZ:
+program dziala wylacznie z formatem .ppm .pgm 
+
